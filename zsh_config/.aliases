@@ -1,0 +1,55 @@
+#My personal BashRc Aliases
+alias s='pamac search '
+alias df='df -h'                          # human-readable sizes
+alias free='free -m'                      # show sizes in MB
+alias more=less
+alias ls='ls -lah --color=auto'
+alias cp='cp -iv'
+alias v='nvim'
+alias i='sudo pacman -S '
+alias rm='sudo pacman -Rns '
+alias u='sudo pacman -Syu '
+alias b='pamac build '
+alias gs='git status'
+alias gv='gource'
+alias bat='upower -i /org/freedesktop/UPower/devices/battery_BAT0| grep -E "state|to\ full|time to empty|percentage|capacity"'
+alias keys='v .config/awesome/configuration/keys/global.lua'
+alias notifications='v .config/awesome/module/notifications.lua'
+alias startup='v .config/awesome/configuration/apps.lua'
+alias findwlp='ls /sys/class/net | grep wlp'
+alias at='alacritty-themes'
+alias awesomedir='.config/awesome/'
+alias rifleconf='v .config/ranger/rifle.conf'
+alias atkeys='v .config/alacritty/alacritty.yml'
+ex ()
+{
+  if [ -f $1 ] ; then
+    case $1 in
+      *.tar.bz2)   tar xjf $1   ;;
+      *.tar.gz)    tar xzf $1   ;;
+      *.bz2)       bunzip2 $1   ;;
+      *.rar)       unrar x $1     ;;
+      *.gz)        gunzip $1    ;;
+      *.tar)       tar xf $1    ;;
+      *.tbz2)      tar xjf $1   ;;
+      *.tgz)       tar xzf $1   ;;
+      *.zip)       unzip $1     ;;
+      *.Z)         uncompress $1;;
+      *.7z)        7z x $1      ;;
+      *)           echo "'$1' cannot be extracted via ex()" ;;
+    esac
+  else
+    echo "'$1' is not a valid file"
+  fi
+}
+# Flutter Path
+export FLUTTER=/opt/flutter/bin 
+#export PATH=$PATH:/opt/flutter/bin 
+# Android SDK Path 
+export ANDROID_SDK=/opt/android-sdk
+#export ANDROID_PATH=/opt/android-sdk/tools:/opt/android-sdk/platform 
+export ANDROID_HOME=/opt/android-sdk 
+POWERLEVEL9K_DISABLE_GITSTATUS=true
+GITSTATUS_LOG_LEVEL=DEBUG
+set -o vi
+#export PATH=$PATH:$ANDROID_HOME/tools 
