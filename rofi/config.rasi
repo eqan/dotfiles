@@ -1,0 +1,8 @@
+/** Configured For Applets **/configuration {
+  show-icons:         true;
+  icon-theme:         "Papirus";
+//  location: 5;
+  yoffset: -10;
+  xoffset: -20;
+}
+@import "/home/eqana/.local/share/rofi/themes/Arc-Dark.rasi"
