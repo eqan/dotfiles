@@ -1,0 +1,14 @@
+# paste this is /etc/systemd/system/lock.service
+ [Unit]
+ Description=Lock
+ Before=sleep.target
+
+ [Service]
+ User=eqana
+ Environment=DISPLAY=:0
+ ExecStart=/usr/local/bin/betterlockscreen -l
+
+ [Install]
+ WantedBy=multi-user.target
+ WantedBy=suspend.target
+ WantedBy=sleep.target
