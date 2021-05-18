@@ -1,4 +1,9 @@
-# paste this is /etc/systemd/system/lock.service
+# copy betterlockscreen by first checking its path "which betterlockscreen" to /usr/local/bin/betterlockscreen
+# then paste this is /etc/systemd/system/lock.service
+# Delete the comments above
+# use chmod u+x lock.service
+# Use systemctl enable lock.service
+
  [Unit]
  Description=Lock
  Before=sleep.target
