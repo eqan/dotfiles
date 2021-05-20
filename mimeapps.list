@@ -1,0 +1,33 @@
+[Added Associations]
+application/pdf=org.pwmt.zathura-pdf-mupdf.desktop;freeoffice-textmaker.desktop;zathura.desktop;
+application/x-theme=sublime_text.desktop;
+image/jpeg=feh.desktop;gimp.desktop;qView.desktop;ristretto.desktop;
+image/png=feh.desktop;org.inkscape.Inkscape.desktop;gimp.desktop;qView.desktop;ristretto.desktop;
+inode/directory=exo-file-manager.desktop;
+text/plain=nvim.desktop;mpv.desktop;brave-nightly-bin.desktop;org.gnome.gedit.desktop;
+text/x-csrc=nvim.desktop;sublime_text.desktop;
+text/x-c++src=nvim.desktop;sublime_text.desktop;
+text/vnd.graphviz=vim.desktop;
+image/gif=ristretto.desktop;
+image/svg+xml=org.inkscape.Inkscape.desktop;feh.desktop;krita_svg.desktop;qView.desktop;
+application/x-executable=terminator.desktop;
+x-scheme-handler/http=exo-web-browser.desktop;
+x-scheme-handler/https=exo-web-browser.desktop;
+x-scheme-handler/trash=exo-file-manager.desktop;
+application/javascript=gvim.desktop;
+application/octet-stream=nvim.desktop;
+text/html=nvim.desktop;
+text/csv=freeoffice-planmaker.desktop;
+
+[Default Applications]
+image/jpeg=ristretto.desktop;
+inode/directory=org.gnome.Nautilus.desktop;
+text/html=brave-nightly-bin.desktop
+text/plain=sublime_text.desktop
+x-scheme-handler/http=brave-nightly-bin.desktop;
+x-scheme-handler/https=brave-nightly-bin.desktop;
+x-scheme-handler/msteams=teams.desktop
+
+[Removed Associations]
+application/vnd.ms-htmlhelp=com.github.johnfactotum.Foliate.desktop;brave-nightly-bin.desktop;
+text/plain=vim.desktop;okularApplication_txt.desktop;code-oss.desktop;sublime_text.desktop;
