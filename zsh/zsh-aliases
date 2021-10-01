@@ -22,6 +22,7 @@ alias awesomedir='.config/awesome/'
 alias rifleconf='v .config/ranger/rifle.conf'
 alias atkeys='v .config/alacritty/alacritty.yml'
 alias cls='clear'
+alias storage='cd /mnt/storage/'
 ex ()
 {
   if [ -f $1 ] ; then

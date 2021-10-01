@@ -1,5 +1,5 @@
 #!/bin/sh
-HISTFILE="$XDG_DATA_HOME"/zsh/zsh_history
+HISTFILE=$HOME/.config/zsh/zsh-history
 HISTSIZE=1000000
 SAVEHIST=1000000
 export PATH="$HOME/.local/bin":$PATH
@@ -11,7 +11,7 @@ export PATH=$HOME/.local/share/go/bin:$PATH
 #export PATH=$HOME/.fnm:$PATH
 #eval "$(fnm env)"
 #eval "$(zoxide init zsh)"
-# eval "`pip completion --zsh`"
+eval "`pip completion --zsh`"
 
 
 # >>> conda initialize >>>
