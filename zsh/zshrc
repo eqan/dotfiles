@@ -46,17 +46,6 @@ zsh_add_completion "esc/conda-zsh-completion" true
 # More completions https://github.com/zsh-users/zsh-completions
 
 # Key-bindings
-# Use ranger to switch directories and bind it to ctrl-o
-rangercd () {
-    tmp="$(mktemp)"
-    ranger --choosedir="$tmp" "$@"
-    if [ -f "$tmp" ]; then
-        dir="$(cat "$tmp")"
-        rm -f "$tmp"
-        [ "$dir" != "$(pwd)" ] && cd "$dir"
-    fi
-}
-bindkey -s '^o' 'rangercd\n'
 bindkey -s '^f' 'zi^M'
 bindkey -s '^s' 'ncdu^M'
 # bindkey -s '^n' 'nvim $(fzf)^M'
